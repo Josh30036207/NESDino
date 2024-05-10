@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "compileNES",
+            "command": "${fileDirname}\\compile.bat",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "args": ["${fileBasenameNoExtension}"],
+            "detail": "NES c compiler."
+        }
+    ],
+    "version": "2.0.0"
+}
