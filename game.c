@@ -189,7 +189,7 @@ void gameOver(void){
 
 	//update high score
 	if(score > hiScr){
-
+		hiScr = score;
 		mapTiles[(5*16)] = mapTiles[(5*13)];
 		mapTiles[(5*16)+1] = mapTiles[(5*13)+1];
 		mapTiles[(5*17)] = mapTiles[(5*14)];
